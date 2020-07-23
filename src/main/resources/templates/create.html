@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{layout :: layout('newOrder', ~{::body}, true)}">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>New order</h1>
+<form id="createOrderForm" method="post">
+    <div class="form-group">
+        <label for="customer">Customer</label>
+        <select id="customer" class="form-control" name="customer" required></select>
+    </div>
+    <p>Products</p>
+    <div class="form-group" id="product-1">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Product and amount</span>
+            </div>
+            <select id="product-select-1" class="form-control" name="product" required></select>
+            <input type="number" name="amount" step="1" min="1" value="1" required>
+        </div>
+    </div>
+    <div class="form-group" id="buttonStart">
+        <button class="btn btn-primary" type="button" onclick="addProductSelect()">Add item</button>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-success" type="submit">Create</button>
+    </div>
+</form>
+<script>
+    var nextId = 2
+    $(document).ready(function() {
+      initCustomerSearch("#customer")
+      initProductSearch("#product-select-1")
+      $("#createOrderForm").validate({
+        errorClass: 'is-invalid',
+        errorPlacement: function(error, element) {},
+        validClass: 'is-valid'
+      })
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:fragment="layout(menu, template, showNavbar)">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="">
+    <script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/webjars/jquery-validation/1.19.2/dist/jquery.validate.js"></script>
+    <script src="/webjars/popper.js/2.0.2/umd/popper.min.js"></script>
+    <script src="/webjars/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/webjars/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/webjars/select2/4.0.13/css/select2.min.css">
+    <link rel="stylesheet" href="/webjars/ttskch__select2-bootstrap4-theme/1.4.0/dist/select2-bootstrap4.min.css">
+    <script src="/webjars/select2/4.0.13/js/select2.min.js"></script>
+    <script src="/util.js"></script>
+    <title>ADF application</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <a class="navbar-brand" href="/">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" th:classappend="${menu == 'orders'}? active : ''" href="/orders">Search Orders</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:classappend="${menu == 'newOrder'}? active : ''" href="/orders/new">New Order</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container-fluid">
+    <th:block th:replace="${template}"></th:block>
+</div>
+</body>
+</html>

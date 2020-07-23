@@ -1,0 +1,242 @@
+[
+  {
+    "brand": "Acer",
+    "category": "Portatīvie datori",
+    "name": "Nitro 5 AN515-43 Black NH.Q6NEP.001",
+    "unitPrice": 806
+  },
+  {
+    "brand": "Lenovo",
+    "category": "Portatīvie datori",
+    "name": "V130-15 Iron Grey 81HN00N1MH/2Y",
+    "unitPrice": 418
+  },
+  {
+    "brand": "Prestigio",
+    "category": "Portatīvie datori",
+    "name": "Visconte Ecliptica Dark Blue PNT10131DEDB",
+    "unitPrice": 229
+  },
+  {
+    "brand": "HP",
+    "category": "Portatīvie datori",
+    "name": "255 G7 Black 6BN10EA#ABB",
+    "unitPrice": 454
+  },
+  {
+    "brand": "Asus",
+    "category": "Portatīvie datori",
+    "name": "VivoBook 15 X509FJ-BQ271 Slate Grey PL",
+    "unitPrice": 599
+  },
+  {
+    "brand": "Asus",
+    "category": "Portatīvie datori",
+    "name": "X543MA-DM621 Grey",
+    "unitPrice": 329
+  },
+  {
+    "brand": "Lenovo",
+    "category": "Portatīvie datori",
+    "name": "IdeaPad L340-15IRH Gaming 81LK00YTPB",
+    "unitPrice": 760
+  },
+  {
+    "brand": "Lenovo",
+    "category": "Portatīvie datori",
+    "name": "Ideapad L340-17IRH Gaming Black 81LL00ECPB PL",
+    "unitPrice": 867
+  },
+  {
+    "brand": "Lenovo",
+    "category": "Portatīvie datori",
+    "name": "IdeaPad S145-15 Grey 81MX0007EU",
+    "unitPrice": 351
+  },
+  {
+    "brand": "Asus",
+    "category": "Portatīvie datori",
+    "name": "TUF Gaming FX705DU-AU034T",
+    "unitPrice": 1099
+  },
+  {
+    "brand": "Lenovo",
+    "category": "Portatīvie datori",
+    "name": "IdeaPad S145-15 81MX009PEU",
+    "unitPrice": 328
+  },
+  {
+    "brand": "Acer",
+    "category": "Portatīvie datori",
+    "name": "Aspire 3 A315-42 Black NX.HF9EP.00A PL",
+    "unitPrice": 501
+  },
+  {
+    "brand": "HP",
+    "category": "Portatīvie datori",
+    "name": "255 G7 Black A4 8/256GB R3 DOS",
+    "unitPrice": 333
+  },
+  {
+    "brand": "HP",
+    "category": "Portatīvie datori",
+    "name": "HP 250 G7 Black 6HM24EA",
+    "unitPrice": 526
+  },
+  {
+    "brand": "HP",
+    "category": "Portatīvie datori",
+    "name": "250 G7 Black 8AC84EA",
+    "unitPrice": 439
+  },
+  {
+    "brand": "Lenovo",
+    "category": "Portatīvie datori",
+    "name": "IdeaPad 3-17 AMD Platinum Gray 81W20017PB PL",
+    "unitPrice": 480
+  },
+  {
+    "brand": "Lenovo",
+    "category": "Personālie datori",
+    "name": "ThinkCentre M82 SFF RM8891 Renew",
+    "unitPrice": 193
+  },
+  {
+    "brand": "Dell",
+    "category": "Personālie datori",
+    "name": "OptiPlex 9020 SFF RM7137WH RENEW",
+    "unitPrice": 380
+  },
+  {
+    "brand": "Asus",
+    "category": "Personālie datori",
+    "name": "ROG Strix GL10CS-PL145AT PL",
+    "unitPrice": 837
+  },
+  {
+    "brand": "HP",
+    "category": "Personālie datori",
+    "name": "ProDesk 400 G1 SFF RM8384 Renew",
+    "unitPrice": 153
+  },
+  {
+    "brand": "Lenovo",
+    "category": "Personālie datori",
+    "name": "V530s SFF 11BM003HPB PL",
+    "unitPrice": 508
+  },
+  {
+    "brand": "Dell",
+    "category": "Personālie datori",
+    "name": "OptiPlex 3040 SFF RM8331 Renew",
+    "unitPrice": 357
+  },
+  {
+    "brand": "Dell",
+    "category": "Personālie datori",
+    "name": "OptiPlex 3020 MT RM8641 Renew",
+    "unitPrice": 526
+  },
+  {
+    "brand": "HP",
+    "category": "Personālie datori",
+    "name": "ProDesk 600 G1 MT RM3818",
+    "unitPrice": 542
+  },
+  {
+    "brand": "Lenovo",
+    "category": "Personālie datori",
+    "name": "ThinkCentre M82 SFF RM8916WH Renew",
+    "unitPrice": 234
+  },
+  {
+    "brand": "Lenovo",
+    "category": "Personālie datori",
+    "name": "ThinkCentre M58e MT RM6789WH Renew",
+    "unitPrice": 85
+  },
+  {
+    "brand": "Lenovo",
+    "category": "Personālie datori",
+    "name": "Legion T530-28ICB 90L3009HMW",
+    "unitPrice": 806
+  },
+  {
+    "brand": "Dell",
+    "category": "Personālie datori",
+    "name": "OptiPlex 9020 SFF RM7035WH RENEW",
+    "unitPrice": 254
+  },
+  {
+    "brand": "HP",
+    "category": "Personālie datori",
+    "name": "ProDesk 400 G1 SFF RM8334 Renew",
+    "unitPrice": 111
+  },
+  {
+    "brand": "Fujitsu",
+    "category": "Personālie datori",
+    "name": "Esprimo G558 VFY:G0558P272SNC",
+    "unitPrice": 909
+  },
+  {
+    "brand": "Dell",
+    "category": "Personālie datori",
+    "name": "OptiPlex 3020 MT RM8618 Renew",
+    "unitPrice": 517
+  },
+  {
+    "brand": "Dell",
+    "category": "Personālie datori",
+    "name": "OptiPlex 9020 SFF RM7071WH RENEW",
+    "unitPrice": 263
+  },
+  {
+    "brand": "AOC",
+    "category": "Monitori",
+    "name": "Gaming C24G1",
+    "unitPrice": 185
+  },
+  {
+    "brand": "BenQ",
+    "category": "Monitori",
+    "name": "ZOWIE XL2411P",
+    "unitPrice": 212
+  },
+  {
+    "brand": "Dell",
+    "category": "Monitori",
+    "name": "U2415",
+    "unitPrice": 215
+  },
+  {
+    "brand": "Dell",
+    "category": "Monitori",
+    "name": "P2419H",
+    "unitPrice": 144
+  },
+  {
+    "brand": "Philips",
+    "category": "Monitori",
+    "name": "243V7QDSB/00",
+    "unitPrice": 101
+  },
+  {
+    "brand": "AOC",
+    "category": "Monitori",
+    "name": "27G2U/BK",
+    "unitPrice": 259
+  },
+  {
+    "brand": "Asus",
+    "category": "Monitori",
+    "name": "TUF Gaming VG279QM",
+    "unitPrice": 364
+  },
+  {
+    "brand": "LG",
+    "category": "Monitori",
+    "name": "27GL850",
+    "unitPrice": 489
+  }
+]

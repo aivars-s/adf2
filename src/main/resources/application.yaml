@@ -1,0 +1,19 @@
+application:
+  test-data:
+    orders:
+      count: 500
+      max-item-count: 15
+      max-item-amount: 20
+server:
+  port: 80
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        search:
+          default:
+            directory_provider: filesystem
+            indexBase: data/index

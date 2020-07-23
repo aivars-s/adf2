@@ -1,0 +1,28 @@
+version: '3'
+services:
+  jenkins:
+    image: jenkinsci/blueocean
+    ports:
+      - 8080:8080
+      - 50000:50000
+    volumes:
+      - jenkins:/var/jenkins_home
+  postgres:
+    image: postgres
+    environment:
+      - POSTGRES_USER=sonar
+      - POSTGRES_PASSWORD=sonar
+    volumes:
+      - postgres:/var/postgresql
+  sonar:
+    image: sonarqube
+    environment:
+      - sonar.jdbc.url=jdbc:postgresql://postgres:5432/sonar
+    ports:
+      - 9000:9000
+    volumes:
+      - sonar:/opt/sonarqube
+volumes:
+  jenkins:
+  postgres:
+  sonar:

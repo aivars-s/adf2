@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{layout :: layout('orders', ~{::body}, true)}">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Order details</h1>
+<ul class="nav nav-tabs" id="orderDetailsTab">
+    <li class="nav-item">
+        <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview">Overview</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="products-tab" data-toggle="tab" href="#detailedView">Detailed view</a>
+    </li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane fade show active" id="overview">
+        <table class="table table-hover table-striped">
+            <tr>
+                <th>Customer</th>
+                <td th:text="${order.customer.firstName + ' ' + order.customer.lastName + ' <' + order.customer.email + '>'}"></td>
+            </tr>
+            <tr>
+                <th>Created at</th>
+                <td th:text="${#temporals.format(order.createdAt, 'dd.MM.yyyy, HH:mm:ss')}"></td>
+            </tr>
+            <tr>
+                <th>Item count</th>
+                <td th:text="${order.items.size()}"></td>
+            </tr>
+            <tr>
+                <th>Order total price</th>
+                <td th:text="${order.getTotalPrice()}"></td>
+            </tr>
+            <tr>
+                <th>Product current total price</th>
+                <td th:text="${order.getProductCurrentTotalPrice()}"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="tab-pane fade" id="detailedView">
+        <table class="table table-hover table-striped">
+            <thead>
+            <tr>
+                <th>Product</th>
+                <th>Amount</th>
+                <th>Order item unit price</th>
+                <th>Product current unit price</th>
+                <th>Order item total price</th>
+                <th>Product current total price</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="item: ${order.items}">
+                <td th:text="${item.product.category + ', ' + item.product.brand + ' ' + item.product.name}"></td>
+                <td th:text="${item.amount}"></td>
+                <td th:text="${item.unitPrice}"></td>
+                <td th:text="${item.product.unitPrice}"></td>
+                <td th:text="${item.getTotalPrice()}"></td>
+                <td th:text="${item.getProductCurrentTotalPrice()}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

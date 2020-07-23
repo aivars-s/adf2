@@ -1,0 +1,62 @@
+[
+  {
+    "firstName": "Tests",
+    "lastName": "Tests",
+    "email": "tests.tests@test.com"
+  },
+  {
+    "firstName": "Pirmais",
+    "lastName": "Klients",
+    "email": "pirmais.klients@email.com"
+  },
+  {
+    "firstName": "Pirmais",
+    "lastName": "Pircējs",
+    "email": "pirmais.pircejs@example.com"
+  },
+  {
+    "firstName": "Pirmais",
+    "lastName": "Testētājs",
+    "email": "pirmais.testetajs@test.com"
+  },
+  {
+    "firstName": "Otrais",
+    "lastName": "Klients",
+    "email": "otrais.klients@email.com"
+  },
+  {
+    "firstName": "Otrais",
+    "lastName": "Pircējs",
+    "email": "otrais.pircejs@example.com"
+  },
+  {
+    "firstName": "Otrais",
+    "lastName": "Testētājs",
+    "email": "otrais.testetajs@test.com"
+  },
+  {
+    "firstName": "Pirmais",
+    "lastName": "Pārbaudītājs",
+    "email": "pirmais.parbauditajs@tester.com"
+  },
+  {
+    "firstName": "Otrais",
+    "lastName": "Pārbaudītājs",
+    "email": "otrais.parbauditajs@tester.com"
+  },
+  {
+    "firstName": "Trešais",
+    "lastName": "Pārbaudītājs",
+    "email": "tresais.parbauditajs@tester.com"
+  },
+  {
+    "firstName": "Vārds",
+    "lastName": "Uzvārds",
+    "email": "vards.uzvards@inbox.lv"
+  },
+  {
+    "firstName": "Cits",
+    "lastName": "Lietotājs",
+    "email": "cits.lietotajs@inbox.lv"
+  }
+]
