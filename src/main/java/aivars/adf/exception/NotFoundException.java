@@ -7,7 +7,7 @@ import lombok.Getter;
 public class NotFoundException extends RuntimeException {
 
     private final Resource resource;
-    private final Object id;
+    private final transient Object id;
 
     public NotFoundException(Resource resource, Object id) {
         this.resource = resource;

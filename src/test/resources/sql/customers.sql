@@ -1,0 +1,3 @@
+insert into customers(first_name, last_name, email, created_at, last_updated_at, version) values ('First', 'Test', 'first.test@test.com', '2020-07-24 04:00', '2020-07-24 04:00:00', 0);
+insert into customers(first_name, last_name, email, created_at, last_updated_at, version) values ('Second', 'Test', 'second.test@test.com', '2020-07-24 04:00', '2020-07-24 04:00:00', 0);
+insert into customers(first_name, last_name, email, created_at, last_updated_at, version) values ('Third', 'Test', 'third.test@test.com', '2020-07-24 04:00', '2020-07-24 04:00:00', 0);

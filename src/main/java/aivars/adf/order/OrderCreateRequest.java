@@ -1,8 +1,6 @@
 package aivars.adf.order;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
@@ -17,6 +15,8 @@ import static java.lang.Math.min;
 
 @Getter
 @Setter
+@EqualsAndHashCode
+@ToString
 public class OrderCreateRequest {
 
     @NotNull

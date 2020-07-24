@@ -2,8 +2,10 @@ package aivars.adf.order;
 
 import aivars.adf.customer.Customer_;
 import aivars.adf.product.Product_;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import org.springframework.data.jpa.domain.Specification;
 
 import javax.persistence.criteria.Predicate;
@@ -12,6 +14,8 @@ import java.util.List;
 
 @Getter
 @Setter
+@EqualsAndHashCode
+@ToString
 public class OrderSearchRequest {
 
     private List<Long> customer = new ArrayList<>();

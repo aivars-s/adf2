@@ -1,0 +1,3 @@
+insert into products(brand, category, name, unit_price, created_at, last_updated_at, version) values ('Brand', 'Category', 'Test First', 100, '2020-07-24 04:00', '2020-07-24 04:00:00', 0);
+insert into products(brand, category, name, unit_price, created_at, last_updated_at, version) values ('Brand', 'Category', 'Test Second', 150, '2020-07-24 04:00', '2020-07-24 04:00:00', 0);
+insert into products(brand, category, name, unit_price, created_at, last_updated_at, version) values ('Brand', 'Category', 'Test Third', 200, '2020-07-24 04:00', '2020-07-24 04:00:00', 0);

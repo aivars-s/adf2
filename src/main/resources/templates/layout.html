@@ -15,7 +15,7 @@
     <title>ADF application</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-sm navbar-light bg-light">
+<nav th:if="${showNavbar == true}" class="navbar navbar-expand-sm navbar-light bg-light">
     <a class="navbar-brand" href="/">Home</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
         <span class="navbar-toggler-icon"></span>
@@ -28,6 +28,11 @@
             <li class="nav-item">
                 <a class="nav-link" th:classappend="${menu == 'newOrder'}? active : ''" href="/orders/new">New Order</a>
             </li>
+            <form class="form-inline" action="/logout" method="post">
+                <li class="nav-item">
+                    <button type="submit" class="btn btn-link" href="/logout">Logout</button>
+                </li>
+            </form>
         </ul>
     </div>
 </nav>

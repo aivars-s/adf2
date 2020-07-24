@@ -11,7 +11,6 @@ import aivars.adf.user.User;
 import aivars.adf.user.UserRepository;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -22,6 +21,7 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
+import java.security.SecureRandom;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
@@ -29,7 +29,6 @@ import java.util.stream.IntStream;
 
 @Component
 @Profile("!integration-test")
-@RequiredArgsConstructor
 @Slf4j
 public class InitTestData implements ApplicationListener<ContextRefreshedEvent> {
 
@@ -41,6 +40,8 @@ public class InitTestData implements ApplicationListener<ContextRefreshedEvent> 
     private final ProductRepository productRepository;
     private final UserRepository userRepository;
 
+    private final Random random;
+
     @Value("${application.test-data.orders.count}")
     private Integer orderCount;
 
@@ -49,6 +50,26 @@ public class InitTestData implements ApplicationListener<ContextRefreshedEvent> 
 
     @Value("${application.test-data.orders.max-item-amount}")
     private Integer maxOrderItemAmount;
+
+    @SneakyThrows
+    public InitTestData(PasswordEncoder encoder,
+                        ObjectMapper mapper,
+                        CustomerRepository customerRepository,
+                        OrderRepository orderRepository,
+                        OrderService orderService,
+                        ProductRepository productRepository,
+                        UserRepository userRepository
+    ) {
+        this.encoder = encoder;
+        this.mapper = mapper;
+        this.customerRepository = customerRepository;
+        this.orderRepository = orderRepository;
+        this.orderService = orderService;
+        this.productRepository = productRepository;
+        this.userRepository = userRepository;
+        this.random = SecureRandom.getInstanceStrong();
+        this.random.setSeed(1337);
+    }
 
     @SneakyThrows
     private void initCustomers() {
@@ -61,9 +82,6 @@ public class InitTestData implements ApplicationListener<ContextRefreshedEvent> 
 
     private void initOrders() {
         log.info("Generating test orders");
-
-        Random random = new Random();
-        random.setSeed(1337);
 
         long customerCount = customerRepository.count();
         long productCount = productRepository.count();

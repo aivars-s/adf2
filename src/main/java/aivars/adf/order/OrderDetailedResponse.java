@@ -2,8 +2,10 @@ package aivars.adf.order;
 
 import aivars.adf.customer.CustomerResponse;
 import aivars.adf.product.ProductResponse;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import java.math.BigDecimal;
 import java.time.Instant;
@@ -11,6 +13,8 @@ import java.util.List;
 
 @Getter
 @Setter
+@EqualsAndHashCode
+@ToString
 public class OrderDetailedResponse {
 
     private Long id;
@@ -20,6 +24,8 @@ public class OrderDetailedResponse {
 
     @Getter
     @Setter
+    @EqualsAndHashCode
+    @ToString
     public static class OrderItemResponse {
 
         private ProductResponse product;

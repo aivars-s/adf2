@@ -1,3 +1,5 @@
+$.fn.clearValidation = function(){var v = $(this).validate();$('[name]',this).each(function(){v.successList.push(this);v.showErrors();});v.resetForm();v.reset();};
+
 function initCustomerSearch(selector) {
   $(selector).select2({
     ajax: {
@@ -38,7 +40,7 @@ function initProductSearch(selector) {
 
 function addProductSelect() {
   var productId = "product-" + nextId
-  var productSelectId = "product-select-"
+  var productSelectId = "product-select-" + nextId
   $("<div class=\"form-group\" id=\"" + productId + "\">\n" +
   "    <div class=\"input-group\">\n" +
   "        <div class=\"input-group-prepend\">\n" +
@@ -51,7 +53,8 @@ function addProductSelect() {
   "        </div>" +
   "    </div>\n" +
   "</div>").insertBefore($("#buttonStart"))
-  initProductSearch(productSelectId)
+  initProductSearch("#" + productSelectId)
+  $("#createOrderForm").clearValidation()
   nextId++
 }
 
